@@ -50,7 +50,7 @@ print("###########")
 print("Nmap scan starting")
 
 for ip in final_ips:
-    command = "nmap " + " -sS -D 10.7.1.80 -O " + ip #change to whatever you want
+    command = "nmap " + "-sS " + ip #change to whatever you want
 
     #sudo nmap --script vuln ip
     process = os.popen(command)
